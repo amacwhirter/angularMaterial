@@ -1,0 +1,9 @@
+<h3>Checkbox</h3>
+<md-checkbox
+  #showDetails
+  [value]=""
+  checked="isChecked"
+  (change)="onChange($event)"
+  >Show details</md-checkbox>
+
+<div *ngIf="showDetails.checked">Some details...</div>
